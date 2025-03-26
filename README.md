@@ -5,7 +5,7 @@
   <img src="images/GraphicalAbstract.png" alt="Abstract image" width="900"/>
 </p>
 
-## 🧠 Abstract
+## 🎯 Abstract
 
 Aquaculture is the fastest-growing food production
 sector of this century. Although artificial intelligence has driven
@@ -31,7 +31,7 @@ validation done demonstrate the model’s strong performance
 and its potential to improve traceability and management in
 aquaculture.
 
-## 🧠 Architecture
+## 🧮 Architecture
 
 <p align="center">
   <img src="images/Abstract.png" alt="Abstract image" width="900"/>
@@ -47,6 +47,8 @@ The architecture of our approach follows these main components:
 5. **Classification Methods**: The concatenated embedding (e.g., `I1T2`) is passed through different classifiers including **Linear Probe (LP)**, **k-Nearest Neighbors (KNN)**, **Random Forest (RF)**, and **Support Vector Machine (SVM)**.
 
 ---
+
+## 💬 Prompts
 
 ## 📈 Performance
 
@@ -107,7 +109,10 @@ These results confirm that ViT embeddings are highly expressive and benefit most
 
 
 
-## 🧠 Explainability
+## 💡 Explainability
+
+
+## 🔗 Reference
 
 ---
 
