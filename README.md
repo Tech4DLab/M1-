@@ -61,6 +61,9 @@ The architecture of our approach follows these main components:
 |                    |           |                  |                  | OpenCLIP               | 84.0      | 74.0             | 94.0             |
 |                    |           |                  |                  | **CLIP**               | **86.5**  | **83.0**         | **90.0**         |
 
+**🔎 Explanation:**  
+CNNs like InceptionV3 show strong performance on both fish species. However, the CLIP multimodal model surpasses most CNNs, proving the advantage of combining visual and textual information.
+
 ---
 
 ### 🧪 ViTs & ResNets
@@ -71,26 +74,56 @@ The architecture of our approach follows these main components:
 | **ViT-B/32**        | **92.0**  | **87.0**         | **97.0**         | RN101                | 74.0      | 87.0             | 61.0             |
 | ViT-B/16            | 0.0       | 0.0              | 0.0              | RN50x4               | 63.5      | 30.0             | 97.0             |
 
+**🔎 Explanation:**  
+Among the ViTs, ViT-B/32 outperforms all others, while ViT-B/16 and L/14 failed likely due to training or input resolution mismatches. Traditional ResNets perform reasonably well, with RN50 being the strongest among them.
+
 ---
 
 ### 🧪 Classifier Comparison (ViT Variants)
 
-| **ViT-B/16 (~86M)** | Total | *D. labrax* | *S. aurata* | **ViT-B/32 (~86M)** | Total | *D. labrax* | *S. aurata* |
-|---------------------|-------|-------------|--------------|----------------------|-------|-------------|--------------|
-| KNN                 | 84.0  | 78.0        | 90.0         | KNN                  | 84.0  | 74.0        | 94.0         |
-| RF                  | 84.0  | 78.0        | 90.0         | RF                   | 86.5  | 83.0        | 90.0         |
-| **SVC**             | 93.5  | 87.0        | 100.0        | SVC                  | 90.0  | 83.0        | 97.0         |
-| **LP**              | 93.5  | 87.0        | 100.0        | **LP**               | **92.0** | **87.0** | **97.0**     |
+#### ViT-B/16 (~86M params)
 
-| **ViT-L/14 (~304M)** | Total | *D. labrax* | *S. aurata* |
-|----------------------|-------|-------------|--------------|
-| KNN                  | 90.5  | 87.0        | 94.0         |
-| RF                   | 89.0  | 91.0        | 87.0         |
-| **SVC**              | **95.0** | **96.0** | **94.0**     |
-| LP                   | 92.5  | 91.0        | 94.0         |
+| Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
+|------------|-----------|------------------|------------------|
+| KNN        | 84.0      | 78.0             | 90.0             |
+| RF         | 84.0      | 78.0             | 90.0             |
+| **SVC**    | **93.5**  | **87.0**         | **100.0**        |
+| **LP**     | **93.5**  | **87.0**         | **100.0**        |
+
+**🔎 Explanation:**  
+Support Vector Machines (SVC) and Linear Probes (LP) extract the most discriminative features from ViT-B/16, achieving perfect classification for *S. aurata* and outperforming simpler methods like KNN or RF.
+
+---
+
+#### ViT-B/32 (~86M params)
+
+| Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
+|------------|-----------|------------------|------------------|
+| KNN        | 84.0      | 74.0             | 94.0             |
+| RF         | 86.5      | 83.0             | 90.0             |
+| SVC        | 90.0      | 83.0             | 97.0             |
+| **LP**     | **92.0**  | **87.0**         | **97.0**         |
+
+**🔎 Explanation:**  
+Again, LP and SVC outperform the rest, especially when paired with ViT-B/32 embeddings. This highlights the power of pretrained ViT representations when combined with simple yet effective classifiers.
+
+---
+
+#### ViT-L/14 (~304M params)
+
+| Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
+|------------|-----------|------------------|------------------|
+| KNN        | 90.5      | 87.0             | 94.0             |
+| RF         | 89.0      | 91.0             | 87.0             |
+| **SVC**    | **95.0**  | **96.0**         | **94.0**         |
+| LP         | 92.5      | 91.0             | 94.0             |
+
+**🔎 Explanation:**  
+The most powerful model, ViT-L/14, reaches up to **95% accuracy** with SVC, showcasing its potential when enough GPU memory and training data are available.
+
+---
 
 
-*The best-performing models for each category are highlighted in bold.*
 
 ## 🧠 Explainability
 
