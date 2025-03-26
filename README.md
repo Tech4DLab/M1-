@@ -2,7 +2,7 @@
 <h3 align="center">🌊 Tech4DLab GLORiA 🎣</h3>
 
 <p align="center">
-  <img src="images/abstract.png" alt="Abstract image" width="600"/>
+  <img src="images/Abstract.png" alt="Abstract image" width="600"/>
 </p>
 
 ## 🧠 Abstract
