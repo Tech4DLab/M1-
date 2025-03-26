@@ -7,7 +7,29 @@
 
 ## 🧠 Abstract
 
-GLORiA (Global Learning for Objective Reasoning in AI) is a research project focused on developing transparent and explainable AI systems, particularly in the context of deep learning models. This repository contains the code, data, and results of the M1+ module, which explores explainability techniques and their integration in real-world machine learning pipelines.
+Aquaculture is the fastest-growing food production
+sector of this century. Although artificial intelligence has driven
+numerous advancements in this field, no studies have focused
+on the risks associated with fish escapes from aquaculture
+farms. These events can cause environmental issues, disrupt
+wild populations, compromise the health of other species and
+negatively impact both aquaculture and traditional fisheries.
+This work introduces an innovative approach to determining
+the origin of two economically significant Mediterranean fish
+species, Sparus aurata and Dicentrarchus labrax, using a CLIP-
+based multimodal framework combined with a lightweight Linear
+Probe classifier. By integrating expert-crafted textual descriptions
+with visual embeddings, the proposed system achieves high
+classification accuracy, outperforming traditional CNN and ViT
+models, which require extensive pretraining. Additionally, the
+methodology is validated with various explainability techniques,
+including GRAD-ECLIP, expert-driven feature importance anal-
+ysis and manual feature manipulation, ensuring a transparent
+and interpretable system for aquaculture professionals. Eval-
+uations conducted on wild, farmed and escaped fish and the
+validation done demonstrate the model’s strong performance
+and its potential to improve traceability and management in
+aquaculture.
 
 ---
 
