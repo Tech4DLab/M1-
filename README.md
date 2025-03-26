@@ -36,11 +36,9 @@ aquaculture.
 ## 🗂️ Repository Organization
 
 ```bash
-├── data/                # Processed datasets used in experiments
-├── models/              # Trained model checkpoints
-├── prompts/             # Prompt templates and prompt engineering files
-├── results/             # Output of experiments (tables, figures, explainability outputs)
-├── scripts/             # Training, evaluation, and analysis scripts
-├── notebooks/           # Jupyter notebooks for exploratory analysis
+├── images/              # Visuals and figures used in the README
+├── CNNs/                # Trained model checkpoints for CNN-based architectures
+├── ViTs/                # Trained model checkpoints for Vision Transformers
+├── CLIP/                # Trained model checkpoints for CLIP-based models
 └── README.md            # This file
 
