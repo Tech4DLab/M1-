@@ -53,17 +53,17 @@ The architecture of our approach follows these main components:
 ### 📜 CNNs vs Multimodal Models
 
 | **CNN && ViT Models**     | Total (%) | *D. labrax* (%) | *S. aurata* (%) | **Multimodal Models** | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
-|--------------------|-----------|------------------|------------------|------------------------|-----------|------------------|------------------|
-| MobileNetV2        | 79.0      | 61.0             | 97.0             | BLIP                   | 55.0      | 50.0             | 60.0             |
-| ResNet50           | 80.5      | 74.0             | 87.0             | ALIGN                  | 56.5      | 74.0             | 39.0             |
-| VGG                | 84.0      | 78.0             | 90.0             | BLIP-2                 | 68.0      | 71.0             | 65.0             |
-| **InceptionV3**    | **85.5**  | **74.0**         | **97.0**         | Kosmos-2               | 68.0      | 71.0             | 65.0             |
-| ViT-L/14            | 0.0       | 0.0              | 0.0             | OpenCLIP               | 84.0      | 74.0             | 94.0             |
-| **ViT-B/32**        | **92.0**  | **87.0**         | **97.0**         | **CLIP**               | **86.5**  | **83.0**         | **90.0**         |
-| ViT-B/16            | 0.0       | 0.0              | 0.0              |
+|---------------------------|-----------|------------------|------------------|------------------------|-----------|------------------|------------------|
+| MobileNetV2               | 79.0      | 61.0             | 97.0             | BLIP                   | 55.0      | 50.0             | 60.0             |
+| ResNet50                  | 80.5      | 74.0             | 87.0             | ALIGN                  | 56.5      | 74.0             | 39.0             |
+| VGG                       | 84.0      | 78.0             | 90.0             | BLIP-2                 | 68.0      | 71.0             | 65.0             |
+| **InceptionV3**           | **85.5**  | **74.0**         | **97.0**         | Kosmos-2               | 68.0      | 71.0             | 65.0             |
+| ViT-L/14                  | 0.0       | 0.0              | 0.0              | OpenCLIP               | 84.0      | 74.0             | 94.0             |
+| **ViT-B/32**              | **92.0**  | **87.0**         | **97.0**         | **CLIP**               | **86.5**  | **83.0**         | **90.0**         |
+| ViT-B/16                  | 0.0       | 0.0              | 0.0              |
 
 **🔎 Explanation:**  
-CNNs like InceptionV3 show strong performance on both fish species. However, the CLIP multimodal model surpasses most CNNs, proving the advantage of combining visual and textual information.
+Among CNNs, **InceptionV3** performs best, especially on *S. aurata*. However, **ViT-B/32** surpasses all CNNs with outstanding accuracy across both species. On the multimodal side, **CLIP** stands out, significantly outperforming other vision-language models. This confirms that integrating image and text improves fish classification performance—especially when paired with robust visual encoders like ViTs.
 
 ---
 
@@ -71,12 +71,12 @@ CNNs like InceptionV3 show strong performance on both fish species. However, the
 
 | **ViT Models**      | Total (%) | *D. labrax* (%) | *S. aurata* (%) | **ResNet Variants** | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
 |---------------------|-----------|------------------|------------------|----------------------|-----------|------------------|------------------|
-| ViT-L/14            | 0.0       | 0.0              | 0.0              | RN50                 | 84.0      | 87.0             | 81.0             |
-| **ViT-B/32**        | **92.0**  | **87.0**         | **97.0**         | RN101                | 74.0      | 87.0             | 61.0             |
-| ViT-B/16            | 0.0       | 0.0              | 0.0              | RN50x4               | 63.5      | 30.0             | 97.0             |
+| **ViT-B/16**        | 86.5      | 83.0             | 90.0             | RN50                 | 84.0      | 87.0             | 81.0             |
+| **ViT-B/32**        | 86.5      | 83.0             | 90.0             | RN101                | 74.0      | 87.0             | 61.0             |
+| ViT-L/14            | 86.0      | 91.0             | 81.0             | RN50x4               | 63.5      | 30.0             | 97.0             |
 
 **🔎 Explanation:**  
-Among the ViTs, ViT-B/32 outperforms all others, while ViT-B/16 and L/14 failed likely due to training or input resolution mismatches. Traditional ResNets perform reasonably well, with RN50 being the strongest among them.
+When used with CLIP, **ViTs** consistently outperform **ResNets**. Notably, **ViT-B/16** and **ViT-B/32** achieve balanced performance across species. **ViT-L/14** excels in *D. labrax* detection but is slightly weaker for *S. aurata*. Among ResNets, **RN50** is the most balanced, while **RN50x4** shows instability between classes—highlighting the robustness of transformer-based architectures.
 
 ---
 
@@ -92,7 +92,7 @@ Among the ViTs, ViT-B/32 outperforms all others, while ViT-B/16 and L/14 failed 
 | **LP**     | **93.5**  | **87.0**         | **100.0**        |
 
 **🔎 Explanation:**  
-Support Vector Machines (SVC) and Linear Probes (LP) extract the most discriminative features from ViT-B/16, achieving perfect classification for *S. aurata* and outperforming simpler methods like KNN or RF.
+With embeddings from **ViT-B/16**, both **SVC** and **Linear Probe (LP)** achieve perfect accuracy on *S. aurata* and strong general performance. These methods outperform traditional classifiers like KNN and RF, indicating they better exploit the high-dimensional ViT representations.
 
 ---
 
@@ -106,7 +106,7 @@ Support Vector Machines (SVC) and Linear Probes (LP) extract the most discrimina
 | **LP**     | **92.0**  | **87.0**         | **97.0**         |
 
 **🔎 Explanation:**  
-Again, LP and SVC outperform the rest, especially when paired with ViT-B/32 embeddings. This highlights the power of pretrained ViT representations when combined with simple yet effective classifiers.
+For **ViT-B/32**, the performance hierarchy is similar: LP and SVC yield the best results, especially for *S. aurata*. These results reinforce the effectiveness of linear and margin-based classifiers on CLIP visual embeddings.
 
 ---
 
@@ -120,7 +120,7 @@ Again, LP and SVC outperform the rest, especially when paired with ViT-B/32 embe
 | LP         | 92.5      | 91.0             | 94.0             |
 
 **🔎 Explanation:**  
-The most powerful model, ViT-L/14, reaches up to **95% accuracy** with SVC, showcasing its potential when enough GPU memory and training data are available.
+Despite being a much larger model, **ViT-L/14** performs exceptionally well—especially with **SVC**, reaching the highest total accuracy (95%). This model is more demanding computationally but proves highly effective when paired with robust classifiers.
 
 ---
 
