@@ -31,9 +31,13 @@ validation done demonstrate the model’s strong performance
 and its potential to improve traceability and management in
 aquaculture.
 
----
-
 ## 🧠 Architecture
+
+## 🧠 Performance
+
+## 🧠 Explainability
+
+---
 
 ## 🗂️ Repository Organization
 
