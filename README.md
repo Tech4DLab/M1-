@@ -33,6 +33,10 @@ aquaculture.
 
 ## 🧠 Architecture
 
+<p align="center">
+  <img src="images/Abstract.png" alt="Abstract image" width="900"/>
+</p>
+
 ## 🧠 Performance
 
 ## 🧠 Explainability
