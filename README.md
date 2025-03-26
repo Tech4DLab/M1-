@@ -82,47 +82,28 @@ When used with CLIP, **ViTs** consistently outperform **ResNets**. Notably, **Vi
 
 ### 🧪 Classifier Comparison (ViT Variants)
 
-#### ViT-B/16 (~86M params)
-
-| Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
-|------------|-----------|------------------|------------------|
-| KNN        | 84.0      | 78.0             | 90.0             |
-| RF         | 84.0      | 78.0             | 90.0             |
-| **SVC**    | **93.5**  | **87.0**         | **100.0**        |
-| **LP**     | **93.5**  | **87.0**         | **100.0**        |
-
-**🔎 Explanation:**  
-With embeddings from **ViT-B/16**, both **SVC** and **Linear Probe (LP)** achieve perfect accuracy on *S. aurata* and strong general performance. These methods outperform traditional classifiers like KNN and RF, indicating they better exploit the high-dimensional ViT representations.
-
----
-
-#### ViT-B/32 (~86M params)
-
-| Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
-|------------|-----------|------------------|------------------|
-| KNN        | 84.0      | 74.0             | 94.0             |
-| RF         | 86.5      | 83.0             | 90.0             |
-| SVC        | 90.0      | 83.0             | 97.0             |
-| **LP**     | **92.0**  | **87.0**         | **97.0**         |
+| **Model**       | Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
+|-----------------|------------|-----------|------------------|------------------|
+| ViT-B/16 (~86M) | KNN        | 84.0      | 78.0             | 90.0             |
+| ViT-B/16        | RF         | 84.0      | 78.0             | 90.0             |
+| ViT-B/16        | **SVC**    | **93.5**  | **87.0**         | **100.0**        |
+| ViT-B/16        | **LP**     | **93.5**  | **87.0**         | **100.0**        |
+| ViT-B/32 (~86M) | KNN        | 84.0      | 74.0             | 94.0             |
+| ViT-B/32        | RF         | 86.5      | 83.0             | 90.0             |
+| ViT-B/32        | SVC        | 90.0      | 83.0             | 97.0             |
+| ViT-B/32        | **LP**     | **92.0**  | **87.0**         | **97.0**         |
+| ViT-L/14 (~304M)| KNN        | 90.5      | 87.0             | 94.0             |
+| ViT-L/14        | RF         | 89.0      | 91.0             | 87.0             |
+| ViT-L/14        | **SVC**    | **95.0**  | **96.0**         | **94.0**         |
+| ViT-L/14        | LP         | 92.5      | 91.0             | 94.0             |
 
 **🔎 Explanation:**  
-For **ViT-B/32**, the performance hierarchy is similar: LP and SVC yield the best results, especially for *S. aurata*. These results reinforce the effectiveness of linear and margin-based classifiers on CLIP visual embeddings.
+Across all ViT variants, **SVC** and **Linear Probe (LP)** consistently outperform simpler classifiers like **KNN** and **Random Forest (RF)**.  
+- For **ViT-B/16**, both SVC and LP reach **100% accuracy on *S. aurata*** and 93.5% overall.  
+- **ViT-B/32** follows a similar trend, with LP achieving 92.0% overall.  
+- The strongest results come from **ViT-L/14 + SVC**, reaching **95.0% total accuracy** with high precision for both species.  
 
----
-
-#### ViT-L/14 (~304M params)
-
-| Classifier | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
-|------------|-----------|------------------|------------------|
-| KNN        | 90.5      | 87.0             | 94.0             |
-| RF         | 89.0      | 91.0             | 87.0             |
-| **SVC**    | **95.0**  | **96.0**         | **94.0**         |
-| LP         | 92.5      | 91.0             | 94.0             |
-
-**🔎 Explanation:**  
-Despite being a much larger model, **ViT-L/14** performs exceptionally well—especially with **SVC**, reaching the highest total accuracy (95%). This model is more demanding computationally but proves highly effective when paired with robust classifiers.
-
----
+These results confirm that ViT embeddings are highly expressive and benefit most from classifiers capable of leveraging complex feature spaces.
 
 
 
