@@ -63,7 +63,7 @@ The architecture of our approach follows these main components:
 | ViT-B/16                  | 0.0       | 0.0              | 0.0              |
 
 **🔎 Explanation:**  
-Among CNNs, **InceptionV3** performs best, especially on *S. aurata*. However, **ViT-B/32** surpasses all CNNs with outstanding accuracy across both species. On the multimodal side, **CLIP** stands out, significantly outperforming other vision-language models. This confirms that integrating image and text improves fish classification performance—especially when paired with robust visual encoders like ViTs.
+Among CNNs, **InceptionV3** performs best, especially on *S. aurata*. However, **ViT-B/32** surpasses all CNNs with outstanding accuracy across both species. On the multimodal side, **CLIP** stands out, significantly outperforming other vision-language models. This confirms that integrating image and text improves fish classification performance, especially when paired with robust visual encoders like ViTs.
 
 ---
 
