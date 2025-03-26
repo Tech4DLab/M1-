@@ -1,2 +1,2 @@
-# M1-
-GitHub repository for the [GLORiA project](https://github.com/Tech4Lab/GLORIA), part of the [Tech4DLab](https://github.com/Tech4Lab/Tech4Lab). This module (M1+) focuses on Explainability and Model Transparency.
+<h1 align="center">🐟 M1 && M1+: Benchmarking Deep Learning Models for Fish Classification with Explainability and Model Transparency 🎣</h1>
+<h3 align="center">🐟 Tech4DLab GLORiA 🎣</h3>
