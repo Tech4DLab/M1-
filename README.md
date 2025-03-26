@@ -50,7 +50,7 @@ The architecture of our approach follows these main components:
 
 ## 📈 Performance
 
-### 🧪 CNNs vs Multimodal Models
+### 📜 CNNs vs Multimodal Models
 
 | **CNN && ViT Models**     | Total (%) | *D. labrax* (%) | *S. aurata* (%) | **Multimodal Models** | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
 |--------------------|-----------|------------------|------------------|------------------------|-----------|------------------|------------------|
@@ -67,7 +67,7 @@ CNNs like InceptionV3 show strong performance on both fish species. However, the
 
 ---
 
-### 🧪 ViTs & ResNets
+### 🥊 Selecting CLIP models: ViTs vs ResNets
 
 | **ViT Models**      | Total (%) | *D. labrax* (%) | *S. aurata* (%) | **ResNet Variants** | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
 |---------------------|-----------|------------------|------------------|----------------------|-----------|------------------|------------------|
