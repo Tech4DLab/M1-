@@ -52,14 +52,15 @@ The architecture of our approach follows these main components:
 
 ### 🧪 CNNs vs Multimodal Models
 
-| **CNN Models**     | Total (%) | *D. labrax* (%) | *S. aurata* (%) | **Multimodal Models** | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
+| **CNN && ViT Models**     | Total (%) | *D. labrax* (%) | *S. aurata* (%) | **Multimodal Models** | Total (%) | *D. labrax* (%) | *S. aurata* (%) |
 |--------------------|-----------|------------------|------------------|------------------------|-----------|------------------|------------------|
 | MobileNetV2        | 79.0      | 61.0             | 97.0             | BLIP                   | 55.0      | 50.0             | 60.0             |
 | ResNet50           | 80.5      | 74.0             | 87.0             | ALIGN                  | 56.5      | 74.0             | 39.0             |
 | VGG                | 84.0      | 78.0             | 90.0             | BLIP-2                 | 68.0      | 71.0             | 65.0             |
 | **InceptionV3**    | **85.5**  | **74.0**         | **97.0**         | Kosmos-2               | 68.0      | 71.0             | 65.0             |
-|                    |           |                  |                  | OpenCLIP               | 84.0      | 74.0             | 94.0             |
-|                    |           |                  |                  | **CLIP**               | **86.5**  | **83.0**         | **90.0**         |
+| ViT-L/14            | 0.0       | 0.0              | 0.0             | OpenCLIP               | 84.0      | 74.0             | 94.0             |
+| **ViT-B/32**        | **92.0**  | **87.0**         | **97.0**         | **CLIP**               | **86.5**  | **83.0**         | **90.0**         |
+| ViT-B/16            | 0.0       | 0.0              | 0.0              |
 
 **🔎 Explanation:**  
 CNNs like InceptionV3 show strong performance on both fish species. However, the CLIP multimodal model surpasses most CNNs, proving the advantage of combining visual and textual information.
