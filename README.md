@@ -33,6 +33,8 @@ aquaculture.
 
 ---
 
+## 🧠 Architecture
+
 ## 🗂️ Repository Organization
 
 ```bash
@@ -41,4 +43,5 @@ aquaculture.
 ├── ViTs/                # Trained model checkpoints for Vision Transformers
 ├── CLIP/                # Trained model checkpoints for CLIP-based models
 └── README.md            # This file
+
 
