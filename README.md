@@ -140,7 +140,7 @@ These results confirm that ViT embeddings are highly expressive and benefit most
 ## 💡 Explainability
 
 
-## 🔗 Reference
+## 🔗 CItation
 
 ---
 
