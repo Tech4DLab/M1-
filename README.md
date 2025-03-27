@@ -154,12 +154,18 @@ Regarding feature importance, gray and orange stand out as the most dominant (re
 
 In *D. labrax*, the model emphasizes morphological traits—brown, green, gray, pink, blue, and orange—over pigmentation (red and purple), suggesting it relies more on body shape, fin positioning, and lateral line for classification. This reinforces the model’s focus on structural features over color when identifying this species.
 
-### GRAD-ECLIP
+### 🗺️ GRAD-ECLIP
 
 <p align="center">
-  <img src="images/ColorPrompt.png" alt="Imagen 1" width="45%"/>
+  <img src="images/ColourPrompt.png" alt="Imagen 1" width="45%"/>
   <img src="images/MouthPrompt.png" alt="Imagen 3" width="45%"/>
 </p>
+
+The images above illustrate the behavior of our model using *S. aurata* as an example. When using the **Mouth Prompt** (right), the model concentrates its attention on the fish’s mouth region, reinforcing its importance in classification. In contrast, the **Color Prompt** (left) leads the model to shift focus toward pigmentation-related areas, showing its ability to adapt feature selection based on textual input.
+
+This pattern is consistently observed in *D. labrax* as well, where the model initially detects general fish contours before refining attention based on the specific prompt. The fact that the model dynamically adjusts focus while consistently extracting meaningful features in both *S. aurata* and *D. labrax* confirms the effectiveness of both the model and the prompt design.
+
+These saliency maps strongly support that the classification is based on biologically relevant traits rather than random correlations, reinforcing the validity and interpretability of our approach.
 
 
 
