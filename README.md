@@ -50,11 +50,6 @@ The architecture of our approach follows these main components:
 
 ## 💬 Prompts
 
-
-## 📈 Performance
-
-## 💬 Prompts
-
 **Main feature prompts and visual descriptions for *S. aurata* and *D. labrax*:**
 
 | Species         | Feature            | Class (Color)            | Description                                                                                         |
@@ -73,9 +68,12 @@ The architecture of our approach follows these main components:
 |                 |                    | Wild (🟤 Brown)          | A close-up of a fish displaying a dramatic forehead cut that ends abruptly at the lips.            |
 |                 | Contour            | Farmed (🟢 Green)        | A close-up of a fish emphasizing minimalistic fins positioned close to its smooth surface.         |
 |                 |                    | Wild (💗 Pink)           | A close-up of a fish with lateral fins extending freely and angling slightly outward.              |
-|                 | Lateral Line       | Farmed (🟠 Orange)       | A close-up of a fish showcasing a broad, oval silhouette.                                           |
+|                 | Lateral Line       | Farmed (🟠 Orange)       | A close-up of a fish showcasing a broad, oval silhouette.                                          |
 |                 |                    | Wild (⚫ Gray)           | A close-up of a fish whose streamlined straight shape is accompanied by a pointed snout.           |
 
+---
+
+## 📈 Performance
 
 ### 📜 CNNs vs Multimodal Models
 
