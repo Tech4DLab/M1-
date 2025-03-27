@@ -106,7 +106,7 @@ Among CNNs, **InceptionV3** performs best, especially on *S. aurata*. However, *
 | ViT-L/14            | 86.0      | 91.0             | 81.0             | RN50x4               | 63.5      | 30.0             | 97.0             |
 
 **🔎 Explanation:**  
-When used with CLIP, **ViTs** consistently outperform **ResNets**. Notably, **ViT-B/16** and **ViT-B/32** achieve balanced performance across species. **ViT-L/14** excels in *D. labrax* detection but is slightly weaker for *S. aurata*. Among ResNets, **RN50** is the most balanced, while **RN50x4** shows instability between classes—highlighting the robustness of transformer-based architectures.
+When used with CLIP, **ViTs** consistently outperform **ResNets**. Notably, **ViT-B/16** and **ViT-B/32** achieve balanced performance across species. **ViT-L/14** excels in *D. labrax* detection but is slightly weaker for *S. aurata*. Among ResNets, **RN50** is the most balanced, while **RN50x4** shows instability between classes highlighting the robustness of transformer-based architectures.
 
 ---
 
