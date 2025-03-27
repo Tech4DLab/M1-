@@ -135,7 +135,7 @@ These results confirm that ViT embeddings are highly expressive and benefit most
 
 ## 💡 Explainability
 
-### 
+### Top 3 Featurne releance by cosine similarity
 
 <p align="center">
   <img src="images/LColors3.png" alt="Imagen 1" width="45%"/>
