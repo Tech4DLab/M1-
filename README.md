@@ -2,7 +2,7 @@
 <h3 align="center">🌊 Tech4DLab GLORiA 🎣</h3>
 
 <p align="center">
-  <img src="images/GraphicalAbstract.png" alt="Abstract image" width="900"/>
+  <img src="images/graphical.PNG" alt="Abstract image" width="900"/>
 </p>
 
 ## 🎯 Abstract
@@ -34,7 +34,7 @@ aquaculture.
 ## 🧮 Architecture
 
 <p align="center">
-  <img src="images/graphical.PNG" alt="Abstract image" width="900"/>
+  <img src="images/Architecture.png" alt="Abstract image" width="900"/>
 </p>
 
 The proposed classification framework is based on the CLIP model, leveraging both textual descriptions and visual embeddings to distinguish between wild and farmed fish.  
