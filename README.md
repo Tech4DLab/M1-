@@ -52,23 +52,28 @@ The architecture of our approach follows these main components:
 
 **Main feature prompts and visual descriptions for *S. aurata* and *D. labrax*:**
 
+## 💬 Prompts
+
+**Main feature prompts and visual descriptions for *S. aurata* and *D. labrax*:**
+
 | Species         | Feature            | Class (Color)            | Description                                                                                         |
-|-----------------|--------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
-| **S. aurata**   | Color              | Farmed (🔴 Red)          | A close-up of a fish with an outwardly curved lip line.                                             |
+|:---------------:|--------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+|                 | Color              | Farmed (🔴 Red)          | A close-up of a fish with an outwardly curved lip line.                                             |
 |                 |                    | Wild (🟣 Purple)         | A close-up of a fish with a neutral lip formation.                                                  |
 |                 | Ventral Side       | Farmed (🔵 Blue)         | A close-up of a fish with a lateral line that lacks consistency in thickness and shape.            |
-|                 |                    | Wild (🟤 Brown)          | A close-up of a fish where the lateral line maintains a clean, distinct outline.                   |
+| **_S. aurata_** |                    | Wild (🟤 Brown)          | A close-up of a fish where the lateral line maintains a clean, distinct outline.                   |
 |                 | Shape              | Farmed (🟢 Green)        | A close-up of a fish with an overall refined, smooth appearance enhanced by its fins.              |
 |                 |                    | Wild (💗 Pink)           | A close-up of a fish with long, well-separated lateral fins aiding swift navigation.               |
 |                 | Lateral Line/Fins  | Farmed (🟠 Orange)       | A close-up of a fish featuring a ventral region that starkly contrasts with its upper body.        |
 |                 |                    | Wild (⚫ Gray)           | A close-up of a fish showcasing a smooth color gradient from grey to white with golden accents.    |
-| **D. labrax**   | Color              | Farmed (🔴 Red)          | A close-up of a fish featuring a naturally arched lip contour.                                     |
+|-----------------|--------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+|                 | Color              | Farmed (🔴 Red)          | A close-up of a fish featuring a naturally arched lip contour.                                     |
 |                 |                    | Wild (🟣 Purple)         | A close-up of a fish displaying an uninterrupted, straight mouth structure.                        |
 |                 | Shape              | Farmed (🔵 Blue)         | A close-up of a fish with an upper head contour that blends seamlessly into the lips.              |
-|                 |                    | Wild (🟤 Brown)          | A close-up of a fish displaying a dramatic forehead cut that ends abruptly at the lips.            |
+| **_D. labrax_** |                    | Wild (🟤 Brown)          | A close-up of a fish displaying a dramatic forehead cut that ends abruptly at the lips.            |
 |                 | Contour            | Farmed (🟢 Green)        | A close-up of a fish emphasizing minimalistic fins positioned close to its smooth surface.         |
 |                 |                    | Wild (💗 Pink)           | A close-up of a fish with lateral fins extending freely and angling slightly outward.              |
-|                 | Lateral Line       | Farmed (🟠 Orange)       | A close-up of a fish showcasing a broad, oval silhouette.                                          |
+|                 | Lateral Line       | Farmed (🟠 Orange)       | A close-up of a fish showcasing a broad, oval silhouette.                                           |
 |                 |                    | Wild (⚫ Gray)           | A close-up of a fish whose streamlined straight shape is accompanied by a pointed snout.           |
 
 ---
