@@ -152,7 +152,7 @@ These results confirm that ViT embeddings are highly expressive and benefit most
 
 **🔍 Feature relevance:**
 
-For *D. labrax*, the standard and average-based T-SNE projections consistently align textual prompts with specimen classification: wild features cluster on the left, and farmed features on the right. For *S. aurata*, the trend is reversed—farmed on the left, wild on the right—but both projections maintain internal consistency.
+For *D. labrax*, the standard and average-based T-SNE projections consistently align textual prompts with specimen classification: wild features cluster on the left, and farmed features on the right. For *S. aurata*, the trend is reversed—farmed on the left, wild on the right but both projections maintain internal consistency.
 
 Regarding feature importance, gray and orange stand out as the most dominant (related to Color), followed by brown and blue (Lateral Line). These traits are especially consistent in *S. aurata*, aligning with expert knowledge that prioritizes Color and Lateral Line as key identifiers.
 
