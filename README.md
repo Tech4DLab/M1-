@@ -169,6 +169,22 @@ This pattern is consistently observed in *D. labrax* as well, where the model in
 
 These saliency maps strongly support that the classification is based on biologically relevant traits rather than random correlations, reinforcing the validity and interpretability of our approach.
 
+## 🏁 Conclusions
+
+This work presents a novel CLIP-based multimodal framework for identifying the origin of two key Mediterranean fish species: Sparus aurata and Dicentrarchus labrax. By combining expert-defined textual prompts with visual embeddings, the model achieves high classification accuracy, surpassing traditional CNN and ViT-based methods.
+
+Coupling CLIP embeddings with a lightweight linear probe balances performance and interpretability, while explainability tools such as GRAD-ECLIP, feature analysis and prompt manipulation confirm alignment with biological expertise.
+
+The system proves effective even in complex real-world scenarios, such as escaped fish with mixed traits, where it helps flag labeling inconsistencies and supports traceability in aquaculture.
+
+Looking ahead, the framework will be adapted for real-time use on embedded devices and mobile applications, enabling easy deployment in ports, fish farms and fieldwork. The integration of in situ imagery will further test its robustness in uncontrolled conditions.
+
+Overall, this study highlights the potential of vision-language models to improve transparency and reliability in morphology-based classification, advancing the application of AI in sustainable aquaculture.
+
+## 🏁 Aknoledgments
+
+The study was funded by the project “GLObal change Resilience in Aquaculture-TOOls for Long-term Sustainability (GLORiA-TOOLS),” supported by the Biodiversity Foundation of the Spanish Ministry for the Ecological Transition and Demographic Challenge through the Pleamar Program and co-financed by the European Maritime, Fisheries and Aquaculture Fund (EMFAF).
+
 ## 🔗 CItation
 
 ---
