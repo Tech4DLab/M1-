@@ -181,7 +181,7 @@ Looking ahead, the framework will be adapted for real-time use on embedded devic
 
 Overall, this study highlights the potential of vision-language models to improve transparency and reliability in morphology-based classification, advancing the application of AI in sustainable aquaculture.
 
-## 🏁 Aknoledgments
+## 🤝 Aknoledgments
 
 The study was funded by the project “GLObal change Resilience in Aquaculture-TOOls for Long-term Sustainability (GLORiA-TOOLS),” supported by the Biodiversity Foundation of the Spanish Ministry for the Ecological Transition and Demographic Challenge through the Pleamar Program and co-financed by the European Maritime, Fisheries and Aquaculture Fund (EMFAF).
 
