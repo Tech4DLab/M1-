@@ -154,6 +154,14 @@ Regarding feature importance, gray and orange stand out as the most dominant (re
 
 In *D. labrax*, the model emphasizes morphological traits—brown, green, gray, pink, blue, and orange—over pigmentation (red and purple), suggesting it relies more on body shape, fin positioning, and lateral line for classification. This reinforces the model’s focus on structural features over color when identifying this species.
 
+### GRAD-ECLIP
+
+<p align="center">
+  <img src="images/LColors3.png" alt="Imagen 1" width="45%"/>
+  <img src="images/SColors3.png" alt="Imagen 3" width="45%"/>
+</p>
+
+
 
 ## 🔗 CItation
 
