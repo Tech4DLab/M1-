@@ -139,6 +139,8 @@ These results confirm that ViT embeddings are highly expressive and benefit most
 
 ## 💡 Explainability
 
+### 
+
 <p align="center">
   <img src="images/LColors3.png" alt="Imagen 1" width="45%"/>
   <img src="images/SColors3.png" alt="Imagen 3" width="45%"/>
@@ -147,6 +149,14 @@ These results confirm that ViT embeddings are highly expressive and benefit most
   <img src="images/LColorsTSNE.png" alt="Imagen 2" width="45%"/>
   <img src="images/SColorsTSNE.png" alt="Imagen 4" width="45%"/>
 </p>
+
+**🔍 Feature relevance:**
+
+For *D. labrax*, the standard and average-based T-SNE projections consistently align textual prompts with specimen classification: wild features cluster on the left, and farmed features on the right. For *S. aurata*, the trend is reversed—farmed on the left, wild on the right—but both projections maintain internal consistency.
+
+Regarding feature importance, gray and orange stand out as the most dominant (related to Color), followed by brown and blue (Lateral Line). These traits are especially consistent in *S. aurata*, aligning with expert knowledge that prioritizes Color and Lateral Line as key identifiers.
+
+In *D. labrax*, the model emphasizes morphological traits—brown, green, gray, pink, blue, and orange—over pigmentation (red and purple), suggesting it relies more on body shape, fin positioning, and lateral line for classification. This reinforces the model’s focus on structural features over color when identifying this species.
 
 
 ## 🔗 CItation
