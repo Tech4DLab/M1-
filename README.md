@@ -157,8 +157,8 @@ In *D. labrax*, the model emphasizes morphological traits—brown, green, gray, 
 ### GRAD-ECLIP
 
 <p align="center">
-  <img src="images/LColors3.png" alt="Imagen 1" width="45%"/>
-  <img src="images/SColors3.png" alt="Imagen 3" width="45%"/>
+  <img src="images/ColorPrompt.png" alt="Imagen 1" width="45%"/>
+  <img src="images/MouthPrompt.png" alt="Imagen 3" width="45%"/>
 </p>
 
 
