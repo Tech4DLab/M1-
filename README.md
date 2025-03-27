@@ -161,6 +161,8 @@ In *D. labrax*, the model emphasizes morphological traits, brown, green, gray, p
   <img src="images/MouthPrompt.png" alt="Imagen 3" width="45%"/>
 </p>
 
+**🔍 Image Analisys:**
+
 The images above illustrate the behavior of our model using *S. aurata* as an example. When using the **Mouth Prompt** (right), the model concentrates its attention on the fish’s mouth region, reinforcing its importance in classification. In contrast, the **Color Prompt** (left) leads the model to shift focus toward pigmentation related areas, showing its ability to adapt feature selection based on textual input.
 
 This pattern is consistently observed in *D. labrax* as well, where the model initially detects general fish contours before refining attention based on the specific prompt. The fact that the model dynamically adjusts focus while consistently extracting meaningful features in both *S. aurata* and *D. labrax* confirms the effectiveness of both the model and the prompt design.
