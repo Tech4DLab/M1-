@@ -140,8 +140,8 @@ These results confirm that ViT embeddings are highly expressive and benefit most
 ## 💡 Explainability
 
 <p align="center">
-  <img src="images/Lcolors3.png" alt="Imagen 1" width="45%"/>
-  <img src="images/Scolors3.png" alt="Imagen 3" width="45%"/>
+  <img src="images/LColors3.png" alt="Imagen 1" width="45%"/>
+  <img src="images/SColors3.png" alt="Imagen 3" width="45%"/>
 </p>
 <p align="center">
   <img src="images/ScolorsTSNE.png" alt="Imagen 2" width="45%"/>
