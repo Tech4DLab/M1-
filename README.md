@@ -34,7 +34,7 @@ aquaculture.
 ## 🧮 Architecture
 
 <p align="center">
-  <img src="images/Architecture.png" alt="Abstract image" width="900"/>
+  <img src="images/Abstract.png" alt="Abstract image" width="900"/>
 </p>
 
 The proposed classification framework is based on the CLIP model, leveraging both textual descriptions and visual embeddings to distinguish between wild and farmed fish.  
