@@ -152,7 +152,7 @@ For *D. labrax*, the standard and average-based T-SNE projections consistently a
 
 Regarding feature importance, gray and orange stand out as the most dominant (related to Color), followed by brown and blue (Lateral Line). These traits are especially consistent in *S. aurata*, aligning with expert knowledge that prioritizes Color and Lateral Line as key identifiers.
 
-In *D. labrax*, the model emphasizes morphological traits—brown, green, gray, pink, blue, and orange—over pigmentation (red and purple), suggesting it relies more on body shape, fin positioning, and lateral line for classification. This reinforces the model’s focus on structural features over color when identifying this species.
+In *D. labrax*, the model emphasizes morphological traits, brown, green, gray, pink, blue, and orange, over pigmentation (red and purple), suggesting it relies more on body shape, fin positioning, and lateral line for classification. This reinforces the model’s focus on structural features over color when identifying this species.
 
 ### 🗺️ GRAD-ECLIP
 
@@ -166,8 +166,6 @@ The images above illustrate the behavior of our model using *S. aurata* as an ex
 This pattern is consistently observed in *D. labrax* as well, where the model initially detects general fish contours before refining attention based on the specific prompt. The fact that the model dynamically adjusts focus while consistently extracting meaningful features in both *S. aurata* and *D. labrax* confirms the effectiveness of both the model and the prompt design.
 
 These saliency maps strongly support that the classification is based on biologically relevant traits rather than random correlations, reinforcing the validity and interpretability of our approach.
-
-
 
 ## 🔗 CItation
 
