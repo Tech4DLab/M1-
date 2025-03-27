@@ -57,7 +57,7 @@ The architecture of our approach follows these main components:
 **Main feature prompts and visual descriptions for *S. aurata* and *D. labrax*:**
 
 | Species         | Feature            | Class (Color)            | Description                                                                                         |
-|:---------------:|--------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+|:---------------:|--------------------|--------------------------|----------------------------------------------------------------------------------------------|
 |                 | Color              | Farmed (🔴 Red)          | A close-up of a fish with an outwardly curved lip line.                                             |
 |                 |                    | Wild (🟣 Purple)         | A close-up of a fish with a neutral lip formation.                                                  |
 |                 | Ventral Side       | Farmed (🔵 Blue)         | A close-up of a fish with a lateral line that lacks consistency in thickness and shape.            |
