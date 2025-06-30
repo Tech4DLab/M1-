@@ -189,7 +189,7 @@ The study was funded by the project “GLObal change Resilience in Aquaculture-T
 
 ---
 
-## 🗂️ Repository Organization
+## 🗂️ Repository Organization (Pending of code update)
 
 ```bash
 ├── images/              # Visuals and figures used in the README
