@@ -185,7 +185,7 @@ Overall, this study highlights the potential of vision-language models to improv
 
 The study was funded by the project “GLObal change Resilience in Aquaculture-TOOls for Long-term Sustainability (GLORiA-TOOLS),” supported by the Biodiversity Foundation of the Spanish Ministry for the Ecological Transition and Demographic Challenge through the Pleamar Program and co-financed by the European Maritime, Fisheries and Aquaculture Fund (EMFAF).
 
-## 🔗 CItation
+## 🔗 Citation
 
 ---
 
